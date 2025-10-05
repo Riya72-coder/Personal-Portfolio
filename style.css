@@ -1,0 +1,124 @@
+body {
+    background-color: yellowgreen;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.profile-pic {
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Must be same as width */
+    margin: 20px auto; /* Centered horizontally */
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Hero Section for Homepage --- */
+.hero {
+    background: yellowgreen;
+    color: white;
+    padding: 6rem 0;
+    /* text-align: right; */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    text-align: right;
+    font-weight: 700;
+    margin: 30px 0 0 auto;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    text-align: right;
+    margin: 30px 0 0 auto;
+}
+
+.navbar{
+    background-color: #343a40;
+    color: white
+}
+
+.navbar-nav{
+    color:white
+}
+
+/* --- Project Card Styling --- */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover; 
+}
+
+/* --- Project Card Link Styling --- */
+.project-link {
+    text-decoration: none;
+    color: inherit; 
+}
+
+/* --- Image Hover/Pop-up Effect --- */
+.project-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05); /* Makes the image slightly larger */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* Adds a subtle shadow */
+    cursor: none; /* Changes cursor to indicate it's interactive */
+}
+
+.architect-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.architect-image:hover {
+    transform: scale(1.05); /* Makes the image slightly larger */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* Adds a subtle shadow */
+    cursor: none; /* Changes cursor to indicate it's interactive */
+}
+
+.button-select {
+    padding-bottom: 20px;
+    
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #0d6efd; /* Bootstrap primary color */
+}
+
+.text-right {
+    text-align: right;
+}
